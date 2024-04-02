@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: space-around;
+}
+
+.header-list-item {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	
+}
+
+.card-list {
+	padding: 0 1% 0 1%;
+	width: fit-content;
+	margin: 100px;
+	border: 2px solid black;
+}
