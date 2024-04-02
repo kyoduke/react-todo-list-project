@@ -1,18 +1,21 @@
 .header {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;	
 }
 
 .header-list-item {
-	list-style-type: none;
-	display: flex;
-	align-items: center;
-	
+}
+
+.list-container {
+	margin: 2px;
+	padding: 2px;
+	border: 2px solid black;
 }
 
 .card-list {
 	padding: 0 1% 0 1%;
 	width: fit-content;
-	margin: 100px;
 	border: 2px solid black;
 }
