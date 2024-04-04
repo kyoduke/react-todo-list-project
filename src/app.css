@@ -1,21 +1,61 @@
+body {
+	background-color:antiquewhite;
+	font-family:monospace
+}
+
 .header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
-.header-list-item {
+.header-list-item {}
+
+.app-flex-container {
+	border: 2px solid slateblue;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.input-container {
+	padding: 1rem;
+	width: fit-content;
+	border: 1px solid orange;
+
+	display: flex;
+	flex-direction: column;
+	/* height: 10rem; */
+}
+
+.input-container > .checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.checkbox > label {
+	
 }
 
 .list-container {
-	margin: 2px;
+	display: flex;
+	margin: 0.1rem;
 	padding: 2px;
-	border: 2px solid black;
+	border: 1px solid rgb(155, 172, 3);
+	justify-content: space-evenly;
+	flex-grow: 1;
+	/* flex-wrap: wrap; */
+}
+
+.list-container>div {
+	/* align-self: flex-start; */
 }
 
 .card-list {
 	padding: 0 1% 0 1%;
 	width: fit-content;
-	border: 2px solid black;
+	border: 1px solid black;
 }

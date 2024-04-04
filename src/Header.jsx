@@ -2,7 +2,7 @@ function Header() {
 	return (
 		<>
 			<header className="header">
-				<h1>My Website</h1>
+				<h1>Duque Tarefas</h1>
 
 				<li className="header-list-item">Início</li>
 				<li className="header-list-item">Sobre</li>
