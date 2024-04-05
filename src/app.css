@@ -10,7 +10,7 @@ body {
 	list-style-type: none;
 }
 
-.header-list-item {}
+/* .header-list-item {} */
 
 .app-flex-container {
 	border: 2px solid slateblue;
@@ -36,9 +36,7 @@ body {
 	/* border: 1px solid black; */
 }
 
-.checkbox > label {
-	
-}
+/* .checkbox > label {} */
 
 .list-container {
 	display: flex;
@@ -50,9 +48,7 @@ body {
 	/* flex-wrap: wrap; */
 }
 
-.list-container>div {
-	/* align-self: flex-start; */
-}
+/* .list-container>div {} */
 
 .card-list {
 	padding: 0 1% 0 1%;
