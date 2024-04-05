@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 
 
-function List({title, description, done}) {
+function Task({title, description, done}) {
 	
 	return (
 		<div className="card-list">
@@ -13,10 +13,10 @@ function List({title, description, done}) {
 	)
 }
 
-List.propTypes = {
+Task.propTypes = {
 	title: PropTypes.string,
 	description: PropTypes.string.isRequired,
 	done: PropTypes.bool
 }
 
-export default List;
+export default Task;

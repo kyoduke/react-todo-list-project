@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import Header from "./Header"
-import List from "./List"
+import Task from "./Task"
 import { v4 as uuidv4 } from 'uuid'
 
 
 function App() {
 
-  const [lists, setLists] = useState([{ title: "Tarefa 1", description: "Descrição 1", done: false }, { title: "Tarefa 2", description: "Descrição 2", done: false }, { title: "Tarefa 3", description: "Descrição 3", done: true }])
+  const [list, setList] = useState([{ title: "Tarefa 1", description: "Descrição 1", done: false }, { title: "Tarefa 2", description: "Descrição 2", done: false }, { title: "Tarefa 3", description: "Descrição 3", done: true }])
+
   return (
     <>
       <Header />
@@ -19,8 +20,8 @@ function App() {
             <label htmlFor="completed">Tarefa concluída?</label>
             <input type="checkbox" name="completed" id="" />
           </div>
-          <input type="button" value="Adicionar" onClick={() => setLists(
-            [...lists, {
+          <input type="button" value="Adicionar" onClick={() => setList(
+            [...list, {
               // dados estaticos para teste, substituir por valores nos inputs
               title: "Tarefa adicionada", 
               description: "Tarefa adicionada", 
@@ -29,8 +30,8 @@ function App() {
 
         </div>
         <div className='list-container'>
-          {lists.map(list => {
-            return <List key={uuidv4()} title={list.title} description={list.description} done={list.done} />
+          {list.map(task => {
+            return <Task key={uuidv4()} title={task.title} description={task.description} done={task.done} />
           })
           }
 
